@@ -1,2 +1,2 @@
-# Wheater
+# Weather
 Väderapp
