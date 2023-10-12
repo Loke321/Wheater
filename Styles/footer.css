@@ -1,0 +1,83 @@
+@import "variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika&display=swap');
+body{
+    background-color: var(--light-blue);
+    color: var(--black);
+    margin: 0;
+    overflow: hidden;
+}
+
+
+div.footer_nav-and-logo{
+    display: flex;
+    
+}
+
+div.colorchange{
+    width: 100%;
+    height: 100px;
+    background-color: var(--blue);
+    background: rgb(0,77,169);
+    background: linear-gradient(180deg, rgba(0,77,169,1) 30%, rgba(157,217,243,1) 100%);
+}
+
+.Image{
+    width:200px;
+    height:150px;
+}
+
+div.productMaincontainer{
+display: flex;
+justify-content: space-around;
+padding-top: 50px;
+align-items: center;
+background-color: var(--light-blue);
+height: 100px;
+}
+
+div.products{
+font-family:'Signika', sans serif;
+height: 230px;
+width: 210px;
+padding-top: 125px;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+div.Sponsorship{
+padding-left: 9.5%;
+padding-top: 20px;
+
+}
+
+p#Sponsorship{
+ font-family:'Signika', sans serif ;
+}
+
+div.padding{
+padding-top:125px;
+}
+
+p#text{
+    font-family:'Signika', sans serif;
+    width:30%;
+}
+
+div.copyright{
+    display: flex;
+    justify-content: center;
+
+}
+
+p#copyrights{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.colorchange2{
+    width: 100%;
+    height: 100px;
+    background-color: var(--blue);
+    background: rgb(0,77,169);
+    background: linear-gradient(0deg, rgba(0,77,169,1) 30%, rgba(157,217,243,1) 100%);
+}
