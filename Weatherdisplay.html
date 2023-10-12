@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/variables.css">
+    <link rel="stylesheet" href="Styles/Weatherdisplay.css">
     <title>Wheater</title>
 </head>
 <body>
@@ -16,18 +17,19 @@
             <li></li>
         </ul>
     </nav>
-    <h1>Väderprognos:</h1>
-    <form action="Weatherdisplay.html" method="post" id="locationForm">
-        <label for="land">Land: </label>
-        <input type="text" id="land" name="land" required>
-        <br>
-        <label for="stad">Stad: </label>
-        <input type="text" id="stad" name="stad" required>
-        <br>
-        <input type="submit" name="" id="">
-    </form>
-    <div>Om oss</div>
-    <div>Kontakta oss</div>
+    <div class="metric">
+        <p>Aktuell tid: </p><span id="time"></span>
+    </div>
+    <div class="metric">
+        <p>temperatur: </p><span id="temperature"></span>
+    </div>
+    <div class="metric">
+        <p>Vindstyrka: </p><span id="winddir"></span>
+    </div>
+    <div class="metric">
+        <p>Vindstyrka: </p><span id="windspd"></span>
+    </div>
+
 </body>
 <script src="scripts.js"></script>
 </html>

@@ -1,4 +1,4 @@
-document.getElementById("locationForm").addEventListener("submit", function(event) {
+    document.getElementById("locationForm")?.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the form from actually submitting
     const city = document.getElementById("stad").value;
     const country = document.getElementById("land").value;
@@ -18,7 +18,6 @@ document.getElementById("locationForm").addEventListener("submit", function(even
             return repsone.json();
         })
         .then(result => {
-            console.log(result);
             var latitude = result[0].latitude;
             var longitude = result[0].longitude;
             getWeather(latitude, longitude);
@@ -41,9 +40,27 @@ function getWeather(latitude, longitude){
             return repsone.json();
         })
         .then(result => {
-            console.log(result);
+            localStorage.setItem('weatherData', JSON.stringify(result));
+            window.location.replace("Weatherdisplay.html");
         })
         .catch(error => {
             console.log("Error: ", error);
         });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const weatherData = JSON.parse(localStorage.getItem('weatherData'));
+    console.log(weatherData);
+
+    const time = document.getElementById('time');
+    time.textContent = weatherData.current_weather.time;
+
+    const temp = document.getElementById('temperature');
+    temp.textContent = weatherData.current_weather.temperature;
+
+    const winddir = document.getElementById('winddir');
+    winddir.textContent = weatherData.current_weather.winddirection;
+
+    const windspd = document.getElementById('windspd');
+    windspd.textContent = weatherData.current_weather.windspeed;
+})
