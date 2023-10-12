@@ -1,0 +1,69 @@
+@import "variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika&display=swap');
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+nav.Banner{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--light-blue);
+    position: absolute;
+    top: 0;
+}
+ul.Homeliststyling{
+    display: flex;
+    gap: 30px;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+}
+ul.Homeliststyling:last-child{
+    padding-right: 30px;
+}
+li.Homelist{
+    list-style-type: none;
+}
+li.Homelist:last-child{
+    color: var(--white);
+}
+img.logoStyling{
+    width: 100px;
+    height: 50px;
+}
+div.Background-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Bilder/I\ trust\ in\ emilv2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1.Title{
+    font-family: 'Signika', sans-serif;
+    color: var(--white);
+}
+h1.Hometext{
+    font-size: 80px;
+    margin: 0px;
+}
+h2.Hometext{
+    font-size: 30px;
+    margin: 0px;
+}
+.Hometext{
+    font-family: 'Permanent Marker', sans-serif;
+    color: var(--black);
+}
+div.container{
+    display: flex;
+    align-items: center;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
