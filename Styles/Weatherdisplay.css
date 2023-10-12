@@ -1,0 +1,10 @@
+@import "variables.css";
+body {
+    background-color: var(--darker-orange);
+}
+
+div.metric {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
