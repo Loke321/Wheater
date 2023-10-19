@@ -1,10 +1,9 @@
 @import "variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika&display=swap');
-body{
+#FooterContainer{
     background-color: var(--light-blue);
     color: var(--black);
     margin: 0;
-    overflow: hidden;
 }
 
 
