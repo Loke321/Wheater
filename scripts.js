@@ -64,3 +64,4 @@ document.addEventListener('DOMContentLoaded', function() {
     const windspd = document.getElementById('windspd');
     windspd.textContent = weatherData.current_weather.windspeed;
 })
+
