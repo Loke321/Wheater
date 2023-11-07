@@ -1,14 +1,14 @@
 :root {
-    --main-yellow: #FFC619;
+    --main-yellow: #ffc619;
     --yellow2: #f3af29;
     --main-orange: #FDA300;
-    --darker-orange: #FA841A;
+    --darker-orange: #fa841a;
     --blue: #004DA9;
     --light-blue: #9DD9F3;
     --dark-blue: #1F4762;
-    --black: #182833;
+    --black: rgb(24, 40, 51);
     --white: #E1E3E7;
-    --brown: #E09F5A;
+    --brown: #e09f5a;
     --logo-design: img(Bilder\Logo-removebg-preview.png);
     
 }
