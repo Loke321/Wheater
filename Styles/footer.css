@@ -1,8 +1,8 @@
 @import "variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika&display=swap');
 #FooterContainer{
-    background-color: var(--light-blue);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
     margin: 0;
 }
 
@@ -10,14 +10,6 @@
 div.footer_nav-and-logo{
     display: flex;
     
-}
-
-div.colorchange{
-    width: 100%;
-    height: 100px;
-    background-color: var(--blue);
-    background: rgb(0,77,169);
-    background: linear-gradient(180deg, rgba(0,77,169,1) 30%, rgba(157,217,243,1) 100%);
 }
 
 .Image{
@@ -30,7 +22,6 @@ display: flex;
 justify-content: space-around;
 padding-top: 50px;
 align-items: center;
-background-color: var(--light-blue);
 height: 100px;
 }
 
@@ -73,10 +64,3 @@ p#copyrights{
     font-family: 'Times New Roman', Times, serif;
 }
 
-div.colorchange2{
-    width: 100%;
-    height: 100px;
-    background-color: var(--blue);
-    background: rgb(0,77,169);
-    background: linear-gradient(0deg, rgba(0,77,169,1) 30%, rgba(157,217,243,1) 100%);
-}

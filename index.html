@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/variables.css">
     <link rel="stylesheet" href="Styles/Homescreen.css">
-    <link rel="stylesheet" href="Styles/footer.css"
+    <link rel="stylesheet" href="Styles/footer.css">
     <title>Wheater</title>
 </head>
 <body>
@@ -34,16 +34,16 @@
 
 
     <div class="FormContainer">
-    <h1>Väderprognos:</h1>
+    <div class="Lines">
+    <h1>Choose your location</h1>
     <form action="Weatherdisplay.html" method="post" id="locationForm">
-        <label for="land">Land: </label>
-        <input type="text" id="land" name="land" required>
+        <input class="Inputstyling" type="text" id="land" name="land" required placeholder="Country">
         <br>
-        <label for="stad">Stad: </label>
-        <input type="text" id="stad" name="stad" required>
+        <input class="Inputstyling" type="text" id="stad" name="stad" required placeholder="City">
         <br>
         <input type="submit" name="" id="">
     </form>
+    </div>
     </div>
 
 
