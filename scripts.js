@@ -41,7 +41,7 @@ function getWeather(latitude, longitude){
         })
         .then(result => {
             localStorage.setItem('weatherData', JSON.stringify(result));
-            window.location.replace("Weatherdisplay.html");
+            window.location.replace("daily.html");
         })
         .catch(error => {
             console.log("Error: ", error);
@@ -64,4 +64,40 @@ document.addEventListener('DOMContentLoaded', function() {
     const windspd = document.getElementById('windspd');
     windspd.textContent = weatherData.current_weather.windspeed;
 })
+
+
+const myIcon = document.getElementById("myIcon");
+const searchBox = document.getElementById("searchBox");
+const searchInput = document.getElementById("searchInput");
+
+
+myIcon.addEventListener("click", function() {
+
+  if(searchBox.style.display == "none")
+  {
+    searchBox.style.display = "block";
+    return;
+  }
+  if(searchBox.style.display == "block")
+  {
+    searchBox.style.display = "none";
+    return;
+  }
+});
+
+
+
+
+/*
+document.addEventListener("click", function(event) {
+    if (event.target !== myIcon && event.target !== searchInput) {
+      searchBox.style.display = "none";
+    }
+  });
+  
+  
+  searchBox.addEventListener("click", function(event) {
+    event.stopPropagation();
+  });
+ */
 
