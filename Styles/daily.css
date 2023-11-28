@@ -34,10 +34,9 @@ li.Homelist{
 
 div.metric{
     font-family: 'Signika', sans-serif;
-    
 }
 
-img.logoStyling{
+a img.logoStyling{
     width: 100px;
     height: 50px;
 }
@@ -75,6 +74,35 @@ div.mainContainer{
 i.fa.fa-search{
     color: var(--white);
 }
+a#myIcon.fa.fa-search{
+    text-decoration: none;
+    color: var(--white);
+}
+a#myIcon.fa.fa-search:hover{
+    color:var(--yellow2);
+    transform: scale(1.2);
+}
+
+#searchBox {
+    display: none;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    padding: 10px;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    z-index: 1;
+    border-radius: 5px;
+    
+  }
+  #searchInput{
+    border-radius: 5px;
+    border: none;
+  }
+  #searchButton{
+    border:none;
+  }
+  
 
 div.tabell{
     height: 700px;
@@ -88,6 +116,7 @@ div.tabell{
     width: calc(100% - 100px);
 }
 
+
 li.styling{
     list-style-type: none;
     font-family: 'Signika', sans-serif;
@@ -99,6 +128,8 @@ li.styling{
     border-color:gray;
     padding-left: 10px;
     border-radius: 7.5px;
+    justify-content: space-evenly;
+    position: relative;
 }
 
 li.styling:hover{
@@ -106,6 +137,10 @@ li.styling:hover{
     background-color: var(--light-blue);
 }
 
+li.styling > div:first-of-type{
+    position: absolute;
+    left: 10px;
+}
 
 
 .tabell > :nth-child(n+1){
@@ -120,6 +155,12 @@ svg{
     height: 50px;
 }
 
-div.styles{
+div.värden{
+    display:flex;
+    align-items: center;
+}
 
+li.Homelist > a{
+    color: var(--light-blue);
+    text-decoration: none
 }
